@@ -1,8 +1,17 @@
 package usersadmin
 
+/**
+ * This service class has the logic to get the user data from the database
+ * using some filters
+ * @author Armando Jaramillo Magallon
+ */
 class UserDAOService {
 
 		
+	/**
+	 * retrieves the list of users under 18 years old, using very basic criteria
+	 * @author Armando Jaramillo Magallon
+	 */
 	def getUnderAgeUsers()
 	{
 		//with dynamic finders
@@ -17,6 +26,10 @@ class UserDAOService {
 		}
 	}
 	
+	/**
+	 * retrieves the list of users over 18 years old, using very basic criteria
+	 * @author Armando Jaramillo Magallon
+	 */
 	def getAdultUsers()
 	{
 		//with dynamic finders
